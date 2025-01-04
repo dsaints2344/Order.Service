@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lser/E8VGUw=",
+  "dgSpecHash": "ReFazjda3xo=",
   "success": true,
-  "projectFilePath": "C:\\Repos\\CodeMazeECommerce\\order-microservice\\Order.Service\\Order.Service.csproj",
+  "projectFilePath": "C:\\repos\\Order.Service\\Order.Service\\Order.Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

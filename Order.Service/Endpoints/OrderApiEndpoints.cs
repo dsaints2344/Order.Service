@@ -28,5 +28,19 @@ public static class OrderApiEndpoints
 
             return TypedResults.Created($"{order.CustomerId}/{order.OrderId}");
         });
+
+        routeBuilder.MapGet("/{customerId}/{orderId}", IResult 
+            ([FromServices] IOrderStore orderStore, 
+            string customerId, 
+            string orderId) =>
+        {
+            var order = orderStore.GetCustomerOrderById(customerId, orderId);
+
+            return order is null
+            ? TypedResults.NotFound("Order not found for customer")
+            : TypedResults.Ok(order);
+        });
     }
+
+    
 }
