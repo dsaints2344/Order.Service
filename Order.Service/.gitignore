@@ -6,9 +6,6 @@
 # dotenv files
 .env
 
-# Ignore build output directories
-bin/
-obj/
 
 # User-specific files
 *.rsuser
